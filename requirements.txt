@@ -1,6 +1,1 @@
-os
-json
-requests
-datetime
-time
-random
+requests==2.25.1
