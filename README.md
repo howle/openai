@@ -6,6 +6,7 @@ This script allows you to generate and download images using the OpenAI API.
 ## Requirements
     Python 3.6 or higher
     The requests library (can be installed with pip install requests)
+    API Key
 ## Usage
 
     Store your OpenAI API key in a file at $HOME/.openai-key.
