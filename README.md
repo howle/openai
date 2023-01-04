@@ -9,7 +9,7 @@ This script allows you to generate and download images using the OpenAI API.
 ## Usage
 
     Store your OpenAI API key in a file at $HOME/.openai-key.
-    Run the script with python generate_images.py.
+    Run the script with python generate-img.py.
     Follow the prompts to enter a prompt, image count, and size.
     The script will generate and display a list of image URLs.
     Enter the number of images you want to download.
