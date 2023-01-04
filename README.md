@@ -1,52 +1,22 @@
-
 # OpenAI Image Generation Script
 
-This script allows you to generate and download images using the OpenAI API.
+This script allows you to generate and download images using OpenAI's image generation API.
 
-## Requirements
-    Python 3.6 or higher
-    The requests library (can be installed with pip install requests)
-    API Key
-## Usage
+## Prerequisites
 
-    Store your OpenAI API key in a file at $HOME/.openai-key.
-    Run the script with python generate-img.py.
-    Follow the prompts to enter a prompt, image count, and size.
-    The script will generate and display a list of image URLs.
-    Enter the number of images you want to download.
-    The script will download the images and save them to the current directory with filenames in the format ABBREV_PROMPT_TIMESTAMP.png.
+- You will need an API key from OpenAI, which you can obtain by creating an account at [https://beta.openai.com/signup/](https://beta.openai.com/signup/)
+- Your API key should be stored in a file called `.openai-key` in your home directory.
 
+## Running the script
 
+To run the script, execute the following command:
 
+python3 generate-img.py
 
-## Examples
+You will be prompted to enter the following:
 
-```bash
-$ python3 generate-img.py
-Enter a prompt: dancing monkey
-Enter the count: 2
-Enter a size (1 for 256x256, 2 for 512x512, 3 for 1024x1024): 2
-Generating images...
-####################
+- A prompt, which is a text description of the image you want to generate
+- The number of images you want to generate
+- The size of the images you want to generate (options are 256x256, 512x512, or 1024x1024)
 
-Created: 1672811302
-
-
-Image URLs:
-dancing monkey-#1 https://image-url.png
-
-dancing monkey-#2 https://image-url.png
-
-Enter the number of images to download (1-2): 2
-
-Downloading image 1 of 2
-Saved as DM_01-03-2023-23:48:31.png
-
-Downloading image 2 of 2
-Saved as DM_01-03-2023-23:48:32.png
-```
-    
-## Tech Stack
-
-
-Python 3.9.2
+The script will then generate the requested images and print the URLs of the generated images. You will be prompted to enter the number of images you want to download, and the chosen images will be downloaded and saved to your current working directory.
